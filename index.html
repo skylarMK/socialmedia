@@ -21,11 +21,17 @@
     <link rel="shortcut icon" href="https://www.setn.com/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <!--    匯入jQuery    -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>   
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
 
     <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>    
+    <link rel="stylesheet" type="text/css" href="css/style.css"/> 
+
+    <script src="js/jquery.rwdImageMaps.js"></script>
+    <script>
+        $(document).ready(function(e) {
+            $('img[usemap]').rwdImageMaps();
+        });
+    </script>   
 
     <!-- Start Alexa Certify Javascript -->
     <script type="text/javascript">
@@ -125,46 +131,44 @@
 <section class="section1">    
     <div class="section1Bg">
         <div class="visualArea relative">
-            <div class="wrapper flexbox relative">
-                <div class="logoBox flexbox">                    
-                    <div class="title"><img src="images/word1.png" alt="三立新媒體事業群"></div>
-                    <div class="logo"><a href="https://www.setn.com" target="_blank"><img src="images/logo.png" alt="三立新聞網"></a></div>
-                </div>
-                <div class="menuArea">                    
-                    <div class="menuBox">
-                        <ul>
-                            <li>
-                                <a href="#menu1" class="menu1">SETN / Vidol / 電電購</a>
-                            </li>
-                            <li>
-                                <a href="#app" class="menu">APP下載</a>
-                                <a href="#youtube" class="menu">YouTube影音</a>
-                            </li>
-                            <li>
-                                <a href="#facebook" class="menu">FB粉絲團</a>
-                                <a href="#instagram" class="menu">IG追蹤</a>
-                                <a href="#line" class="menu">LINE好友</a>
-                            </li>
-                            <li>
-                                <a href="#telegram" class="menu">Telegram</a>
-                                <a href="#twitter" class="menu">Twitter</a>
-                                <a href="#setn" class="menu">Web新聞訂閱</a>
-                            </li>
-                        </ul>
+            
+            <div class="visualBg">
+                <div class="wrapper">
+                    <div class="logoBox flexbox">                    
+                        <div class="title"><img src="images/word1.png" alt="三立新媒體事業群"></div>
+                        <div class="logo"><a href="https://www.setn.com" target="_blank"><img src="images/logo.png" alt="三立新聞網"></a></div>
                     </div>
-                </div>
-                <div class="visualAreaRight relative">                  
-                    <div class="video absolute">
-                        <div class="relative videoBox">
-                            <!-- <video autoplay muted playsinline loop width="100%">
-                                <source src="https://attach.setn.com/media/NewMedia70sec-6MB.mp4" type="video/mp4">
-                            </video> -->
-                            <div class="video-container">
-                                <iframe width="100%" src="https://www.youtube.com/embed/aknvmepOQkg?rel=0&autoplay=1&loop=1&playlist=aknvmepOQkg&mute=1" frameborder="0" allowfullscreen></iframe>
+
+
+                    <div class="flexbox">
+                        <div class="menuArea">
+                            <div class="allinOneArea">
+                                <img src="images/allinOne.png" width="600" height="365" alt="" usemap="#allinOneMap">
+                                <map name="allinOneMap">
+                                    <a href="https://www.setn.com" target="_blank"><area shape="rect" coords="300,0,790,100" alt="三立新聞網"></a>
+                                    <a href="https://vidol.tv/" target="_blank"><area shape="rect" coords="300,100,770,240" alt="vidol"></a>
+                                    <a href="https://www.setddg.com/" target="_blank"> <area shape="rect" coords="300,240,790,470" alt="電電購"></a>
+                                </map>
+                            </div>
+                        </div>
+                        <div class="visualAreaRight relative">                  
+                            <div class="video absolute">
+                                <div class="relative videoBox">
+                                    <!-- <video autoplay muted playsinline loop width="100%">
+                                        <source src="https://attach.setn.com/media/NewMedia70sec-6MB.mp4" type="video/mp4">
+                                    </video> -->
+                                    <div class="video-container">
+                                        <iframe width="100%" src="https://www.youtube.com/embed/aknvmepOQkg?rel=0&autoplay=1&loop=1&playlist=aknvmepOQkg&mute=1" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+                
+            
+            <div class="wrapper flexbox relative">
                 <div id="menu1" class="introArea relative">
                     <div class="setnSection">
                         <div class="gradient gradientBg relative hostPadding">
